@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyBookshelf</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>MyBookshelf</h1>
+    <a href="#" class="add-btn">Tambah Buku</a>
+  </header>
+
+  <section class="bookshelf-container">
+    <div id="to-read" class="shelf">
+      <h2>Belum Selesai Dibaca</h2>
+      <div class="book-list">
+
+      </div>
+    </div>
+
+    <div id="completed" class="shelf">
+      <h2>Selesai Dibaca</h2>
+      <div class="book-list">
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="add-section-container hidden">
+    <div class="add-form">
+      <div class="header">
+        <h2>Tambahkan Buku</h2>
+        <a href="#" class="close-button">
+          <img src="img/cross.svg" alt="Close">
+        </a>
+      </div>
+      <form action="#">
+        <div class="form-group">
+          <label for="title">Judul buku</label><br>
+          <input type="text" id="title" name="title" placeholder="Masukkan judul buku" maxlength="15" required>
+        </div>
+        <div class="form-group">
+          <label for="author">Penulis</label><br>
+          <input type="text" id="author" name="author" placeholder="Masukkan nama penulis" maxlength="15" required>
+        </div>
+        <div class="form-group">
+          <label for="year">Tahun terbit</label><br>
+          <input type="text" id="year" name="year" placeholder="Masukkan tahun terbit" maxlength="4" required>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" id="is-completed" name="is-completed">
+          <label for="is-completed">Selesai dibaca</label>
+        </div>
+        <input type="submit" value="Tambah ke Rak" name="Submit">
+      </form>
+    </div>
+  </section>
+
+  <section class="edit-section-container hidden">
+    <div class="edit-form">
+      <div class="header">
+        <h2>Sunting Buku</h2>
+        <a href="#" class="close-button">
+          <img src="img/cross.svg" alt="Close">
+        </a>
+      </div>
+      <form action="#">
+        <div class="form-group">
+          <label for="title">Judul buku</label><br>
+          <input type="text" id="title" name="title" placeholder="Masukkan judul buku" maxlength="15" required>
+        </div>
+        <div class="form-group">
+          <label for="author">Penulis</label><br>
+          <input type="text" id="author" name="author" placeholder="Masukkan nama penulis" maxlength="15" required>
+        </div>
+        <div class="form-group">
+          <label for="year">Tahun terbit</label><br>
+          <input type="text" id="year" name="year" placeholder="Masukkan tahun terbit" maxlength="4" required>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" id="is-completed" name="is-completed">
+          <label for="is-completed">Selesai dibaca</label>
+        </div>
+        <input type="submit" value="Perbarui" name="Submit">
+      </form>
+    </div>
+  </section>
+
+  <div class="delete-alert-container hidden">
+    <div class="delete-alert">
+      <div class="header">
+        <h2>Hapus Buku</h2>
+        <a href="#" class="close-button">
+          <img src="img/cross.svg" alt="Close">
+        </a>
+      </div>
+      <div class="text">
+        <p>Apa kamu yakin ingin menghapus buku dengan judul
+          <b></b>?
+        </p>
+        <input type="submit" value="Ya, hapus buku" name="Submit">
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
